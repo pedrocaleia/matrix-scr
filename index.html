@@ -27,7 +27,6 @@
 </head>
 
 <body>
-	<div>Hello world</div>
 	<canvas id="greenmatrix"></canvas>
 
 	<script type="text/javascript">
@@ -60,7 +59,7 @@
 			window.wallpaperPropertyListener = {
 			    applyUserProperties: function(properties) 
 			    {					
-		            if (properties.custombool.value) 
+		            /*if (properties.custombool.value) 
 		            {
 		                window.MatrixChars = true;
 		                window.fps = properties.customint.value;
@@ -69,9 +68,13 @@
 		            {
 		                window.MatrixChars = false;
 		                window.fps = properties.customint.value;
-		            }
+		            }*/
+					
+					window.MatrixChars = false;
+		            window.fps = 25;
+					window.mcolor = '#0F0';
 
-		            if(properties.customcombo.value == 1) {
+		            /*if(properties.customcombo.value == 1) {
 		            	window.mcolor = '#0F0';
 		            }
 
@@ -85,7 +88,7 @@
 
 		            if(properties.customcombo.value == 4) {
 		            	window.mcolor = '#ffffff';	
-		            }	
+		            }*/
 
 
 		            startAnimating();
